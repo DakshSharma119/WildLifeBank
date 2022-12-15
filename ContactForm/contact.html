@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contactcss/style.css" />
+    <!-- CSS only -->
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4ccd6b0674.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>      <nav class="navbar navbar-expand">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content drp">
+          <div>
+            <div class="drphead">
+              <h1>Wildlife Bank.org</h1>
+              <p>PAST. PRESENT. FUTURE</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 b1 box">
+                <p class="txt">
+                  Wildlife Data, Environmental News, Data Analysis, Research
+                  and Policy Solution
+                </p>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-2 box">
+                <a href="/about"> About Wildlife Bank </a>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-2 b2 box">
+                <a href="/team"> Our Team </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="navbar-brand navtitle" href="/">WILDLIFE BANK.ORG</a>
+      <a class="nav-link_learn">
+        <a class="nav-link" href="/quiz">Learn</a>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav_item_left">
+            <a class="nav-link" href="/wildlife"
+              >Wildlife Spot</a
+            >
+          </li>
+          <li></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+<br>
+<br>
+
+
+  <div class="content">
+    
+    <div class="container_two">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="row mb-5">
+            <div class="col-md-4 mr-auto">
+              <h3 class="thin-heading mb-4">IIIT Bangalore</h3>
+              <p> 26/C, Hosur Rd
+              <br>  Electronics City Phase 1, 
+              <br>  Electronic City, Bengaluru, Karnataka 560100 </p>
+            </div>
+            <div class="col-md-6 ml-auto">
+              <h3 class="thin-heading mb-4">Contact Info</h3>
+              <p>T: +91 836-848-8803 <br> E: wildlifebank@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              
+              <h3 class="thin-heading mb-4">Message Us</h3>
+              
+              <form class="mb-5" action="/contact" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="2" placeholder="Write your message" required ></textarea>
+                  </div>
+                </div>  
+                <br>
+                <div class="row">
+                  <div class="col-12">
+                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+
+              <div id="form-message-warning mt-4"></div> 
+              <div id="form-message-success">
+                Your message was sent, thank you!
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+   
+    <div class="socialbox">
+      <ul>
+      <li><a href= "mailto:bankwildlife@gmail.com"> <img src="images/email.png" width="43px" height="43px"> </a></li>
+      <li><a href= "https://www.instagram.com/"> <img src="images/Instagram.png" width="45px" height="45px"> </a></li>
+      <li><a href= "https://www.linkedin.com/"> <img src="images/linkedin.png" width="45px" height="45px"> </a></li>
+      <li><a href= "https://twitter.com/"> <img src="images/twitter.png" width="45px" height="45px"> </a></li>
+      </ul>
+    </div>
+      <p>© all rights reserved 2022</p>
+  </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
